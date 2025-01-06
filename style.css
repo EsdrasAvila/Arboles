@@ -1,0 +1,94 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Aqui estamos diciendo que la condicion se cumple si esta dentro de los 
+500px, porque al pasarse mas de los 500px no cumple la condicion */
+@media  (max-width:500px){
+
+body{
+        background: url(/img/Background.jpeg);
+    }
+
+.Encabezado{
+    background-color: rgb(255, 255, 255);
+    font-size: 32px;
+    text-align: center;
+    margin:0;
+    padding: 0px;
+}
+
+.texto, .titulodos{
+    text-shadow: black 0px 1.8px 0px;
+    margin: 13px 7px;
+    text-align: justify;
+}
+
+.titulodos{
+    color: white;
+    font-size: 25px;   
+}
+
+.h2{
+    text-align: center;
+    text-shadow: 0px 2px 0px rgb(0, 0, 0);
+}
+
+.texto{
+    margin: 30px;
+    padding: 15px;
+    border-radius: 5%;
+    color: white;
+    border: solid 3px rgba(0, 0, 0);
+}
+
+/* COMO AJUSTAR LA IMAGEN DE FONDO Y HACERLA UN POCO TRANSPARENTE */
+.one{
+    background-image: linear-gradient(rgba(210, 221, 62, 0.1),rgba(210,221,62, 0.1)), url(/img/leaf.jpg);
+    background-position: 80% 10%;
+    background-size: 350px 700px;
+}
+
+.two{
+    background: linear-gradient(rgba(210, 221, 62, 0.15),rgba(210,221,62, 0.15)), url(/img/branches.jpg);
+}
+
+.three{
+    background-image: linear-gradient(rgba(22, 22, 19, 0.7),rgba(22, 22, 19, 0.7)), url(/img/trunk.jpg);
+    background-position: 0% 80%;
+    background-size: 1000px 700px;
+}
+
+.four{
+    background-image: linear-gradient(rgba(25,22,22,0.55),rgba(25,22,22,0.55)), url(/img/roots.jpg);
+    background-position: 50% 90%;
+    background-size: 700px;
+}
+
+p.descripcion, p.Gpartes{
+    border-style: none;
+    background-color: #1b6a3c6a;
+    border-radius: 4.30%;
+    padding-top: 5px;
+}
+p.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-shadow: none;
+    border: solid black 5px;
+}
+
+img.arbol{
+    width: 36vh;
+    margin: 0px;
+    border-top-right-radius: 9%;
+    border-top-left-radius: 9%;
+}
+
+/* AQUI TERMINA EL MODO MOBILE */
+}
+
