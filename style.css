@@ -4,9 +4,20 @@ html, body{
 }
 
 
-/* Aqui estamos diciendo que la condicion se cumple si esta dentro de los 
+/* Aqui estamos diciendo que la condicion se cumple si esta dentro de los
 500px, porque al pasarse mas de los 500px no cumple la condicion */
 @media  (max-width:500px){
+.box,.buno, .styleimg{
+    height: 30vw;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.styleimg{
+    height: 20vw;
+}
 
 body{
         background: url(/img/Background.jpeg);
@@ -16,8 +27,11 @@ body{
     background-color: rgb(255, 255, 255);
     font-size: 32px;
     text-align: center;
-    margin:0;
     padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 
 .texto, .titulodos{
@@ -28,7 +42,7 @@ body{
 
 .titulodos{
     color: white;
-    font-size: 25px;   
+    font-size: 25px;
 }
 
 .h2{
@@ -66,6 +80,11 @@ body{
     background-position: 50% 90%;
     background-size: 700px;
 }
+.articulo{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
 
 p.descripcion, p.Gpartes{
     border-style: none;
@@ -81,10 +100,13 @@ p.texto{
     text-shadow: none;
     border: solid black 5px;
 }
+p.descripcion{
+    flex-direction: column-reverse;
+}
 
 img.arbol{
-    width: 36vh;
-    margin: 0px;
+    width: 78vw;
+    margin: 10px;
     border-top-right-radius: 9%;
     border-top-left-radius: 9%;
 }
@@ -92,3 +114,160 @@ img.arbol{
 /* AQUI TERMINA EL MODO MOBILE */
 }
 
+@media (min-width: 501px) {
+    /*Aqui empieza la version web de la pagina*/
+body{
+    background: url(/img/Background.jpeg);
+}
+
+/* INICIO DEL ENCABEZADO */
+.Encabezado{
+  background-color: rgb(255, 255, 255);
+  padding: 1vw;
+  height: 9vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    height: 6vw;
+    width: 6vw;
+}
+
+text.logo{
+    margin: 0.1vw;
+    padding: 0.1vw;
+    text-align: center;
+    border: solid 3px black;
+}
+
+.buno{
+    border: solid 0.4vw greenyellow;
+    font-size: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.styleimg{
+    color: blue;
+    height: 5vw;
+}
+
+.tituloP{
+    font-size: 8vw;
+    align-content: center;
+}
+
+/* AREA DE TITULOS */
+.texto, .titulodos{
+margin: 13px 7px;
+text-align: justify;
+}
+
+.titulodos{
+    margin: 50px;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.h2{
+text-align: center;
+text-shadow: 0px 2px 0px rgb(0, 0, 0);
+}
+
+.texto{
+margin: 30px;
+padding: 15px;
+border: solid 3px rgba(0, 0, 0);
+
+}
+
+/* COMO AJUSTAR LA IMAGEN DE FONDO Y HACERLA UN POCO TRANSPARENTE */
+.one{
+background-image: linear-gradient(rgba(210, 221, 62, 0.1),rgba(210,221,62, 0.1)), url(/img/leaf.jpg);
+background-position: 80% 10%;
+background-size: 1000px 1800px;
+}
+
+.two{
+background: linear-gradient(rgba(210, 221, 62, 0.15),rgba(210,221,62, 0.15)), url(/img/branches.jpg);
+}
+
+.three{
+background-image: linear-gradient(rgba(22, 22, 19, 0.7),rgba(22, 22, 19, 0.7)), url(/img/trunk.jpg);
+background-position: 0% 80%;
+background-size: 1300px 800px;
+}
+
+.four{
+background-image: linear-gradient(rgba(25,22,22,0.55),rgba(25,22,22,0.55)), url(/img/roots.jpg);
+background-position: 50% 90%;
+background-size: 1800px;
+}
+
+p.descripcion, p.Gpartes{
+    border-style: none;
+    padding: 5vw;
+    font-size: 1.8vw;
+    gap: 2vw;
+}
+
+p.texto{
+display: flex;
+flex-direction: row;
+align-items: center;
+text-shadow: none;
+}
+
+p.descripcion{
+    background-color: antiquewhite;
+}
+
+p.Gpartes{
+    background-color: white;
+    padding: 2vw;
+    margin: 2vw;
+}
+
+img.arbol{
+width: 50vw;
+margin: 0px;
+}
+    
+
+.Dpartes{
+    width: 90vw;
+    /* border: solid 5px white; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hojas, .troncos, .ramas, .raices{
+    /* border: solid slateblue 4px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 40vw;
+}
+
+.Contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.one.texto, .two.texto, .three.texto, .four.texto{
+    font-size: 2vw;
+    height: 40vw;
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 3px 0px black;
+}
+
+}
